@@ -23,7 +23,8 @@ pgbackups3:
     - postgres
   environment:
     SCHEDULE: '@daily'
-    S3_REGION: region
+    S3_ENDPOINT: https://s3.domain.com # for another S3 provider
+    S3_REGION: region # **None** for another S3 provider
     S3_ACCESS_KEY_ID: key
     S3_SECRET_ACCESS_KEY: secret
     S3_BUCKET: my-bucket
